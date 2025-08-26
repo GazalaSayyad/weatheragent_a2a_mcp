@@ -70,7 +70,8 @@ A2A handles inter-agent communication using a lightweight, open standard.
 - Agent fallback and escalation patterns
 
 🚀 Getting Started
-Prerequisites
+
+# Prerequisites
 
 Python 3.10+
 
@@ -78,7 +79,7 @@ Access to goole Gemini API (e.g., OpenAI, Anthropic)
 
 API keys for weather services (OpenWeatherMap, Open-Meteo, etc.)
 
-Installation
+# Installation
 
 1. git clone https://github.com/GazalaSayyad/weatheragent_a2a_mcp.git
    pip install -r requirements.txt
@@ -88,9 +89,9 @@ Installation
     # macOS and Linux
     curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Windows (uncomment below line)
+    # Windows (uncomment below line)
 
-# powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    # powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 3. Configure environment variables (via .env file):
     There are two different ways to call Gemini models:
@@ -98,10 +99,11 @@ Installation
     Calling the Gemini API directly using an API key created via Google AI Studio.
     Calling Gemini models through Vertex AI APIs on Google Cloud.
 
-    Environment Setup:-
+    # Environment Setup:-
 
     GOOGLE_API_KEY=your-openai-key
     WEATHER_API_KEY=your-weather-provider-key
+    
     optional - 
 
     MCP_ENDPOINT=http://localhost:10000
@@ -129,7 +131,7 @@ Installation
 🧩 Directory Structure
 
     weatheragent_a2a_mcp/
-    ├── waether_Agent/
+    ├── weather_Agent/
     │   └── __init__.py
         └── __main__.py
         └── agent.py
