@@ -89,6 +89,7 @@ Installation
     curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Windows (uncomment below line)
+
 # powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 3. Configure environment variables (via .env file):
@@ -97,11 +98,14 @@ Installation
     Calling the Gemini API directly using an API key created via Google AI Studio.
     Calling Gemini models through Vertex AI APIs on Google Cloud.
 
-    Environment Setup
+    Environment Setup:-
+
     GOOGLE_API_KEY=your-openai-key
     WEATHER_API_KEY=your-weather-provider-key
+    optional - 
+
     MCP_ENDPOINT=http://localhost:10000
-    A2A_SERVER_URL=http://localhost:9000
+    A2A_SERVER_URL=http://localhost:8080
 
 
 
@@ -123,18 +127,19 @@ Installation
 
 
 🧩 Directory Structure
-weatheragent_a2a_mcp/
-├── waether_Agent/
-│   └── __init__.py
-    └── __main__.py
-    └── agent.py
-    └── agent_executor.py
-    └── test_client.py
-├── mcp_server/
-│   └── server.py
-    └── test_server.py
-├── .env
-├── README.md
+
+    weatheragent_a2a_mcp/
+    ├── waether_Agent/
+    │   └── __init__.py
+        └── __main__.py
+        └── agent.py
+        └── agent_executor.py
+        └── test_client.py
+    ├── mcp_server/
+    │   └── server.py
+        └── test_server.py
+    ├── .env
+    ├── README.md
 
 
 📚 Further Reading
